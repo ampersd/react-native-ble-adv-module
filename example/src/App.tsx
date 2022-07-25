@@ -12,6 +12,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Text>Hello WOOORLD</Text>
       <Text>Result: {result}</Text>
     </View>
   );

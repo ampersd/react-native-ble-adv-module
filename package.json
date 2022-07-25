@@ -2,24 +2,24 @@
   "name": "react-native-awesome-module",
   "version": "0.1.0",
   "description": "test",
-  "main": "lib/commonjs/index",
+  "main": "lib/commonjs/index.js",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
+  "react-native": "src/index.tsx",
   "source": "src/index",
   "files": [
     "src",
     "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
     "android",
     "ios",
     "cpp",
     "react-native-awesome-module.podspec",
     "!lib/typescript/example",
     "!android/build",
-    "!ios/build",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__"
+    "!ios/build"
   ],
   "scripts": {
     "test": "jest",
@@ -138,14 +138,7 @@
     "source": "src",
     "output": "lib",
     "targets": [
-      "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
+      "commonjs"
     ]
   }
 }
