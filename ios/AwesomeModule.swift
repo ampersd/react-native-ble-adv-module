@@ -5,4 +5,9 @@ class AwesomeModule: NSObject {
   func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
     resolve(a*b)
   }
+  
+  @objc(turnBluetoothAdvertise:turnOn:withResolver:withRejecter:)
+  func turnBluetoothAdvertise(customName: String, turnOn: Bool, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
+    resolve(customName)
+  }
 }
