@@ -1,5 +1,5 @@
 {
-  "name": "react-native-awesome-module",
+  "name": "react-native-ble-adv-module",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index.js",
@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/ampersd/react-native-awesome-module",
+  "repository": "https://github.com/ampersd/react-native-ble-adv-module",
   "author": "Anton Korepanov <tony1000@ya.ru> (https://github.com/ampersd)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ampersd/react-native-awesome-module/issues"
+    "url": "https://github.com/ampersd/react-native-ble-adv-module/issues"
   },
-  "homepage": "https://github.com/ampersd/react-native-awesome-module#readme",
+  "homepage": "https://github.com/ampersd/react-native-ble-adv-module#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
