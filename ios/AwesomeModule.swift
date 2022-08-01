@@ -30,6 +30,7 @@ class AwesomeModule: NSObject, CBPeripheralManagerDelegate {
           initPeripheralManager()
       }
       self.customName = customName
+      stopAdvertising()
       if (turnOn) {
 // to overcome problem when we've got in logs:
 //          [CoreBluetooth] API MISUSE: <CBPeripheralManager: 0x281c1d8c0> can only accept this command while in the powered on state
@@ -37,8 +38,6 @@ class AwesomeModule: NSObject, CBPeripheralManagerDelegate {
 // I moved advertising logic in the separate method, which also should be called once
 // inside peripheralManagerDidUpdateState callback when powerOn event is happened
           startAdvertising()
-      } else {
-          stopAdvertising()
       }
       resolve(customName)
   }
